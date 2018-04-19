@@ -1,0 +1,113 @@
+{
+  "localhost": [
+    null,
+    null,
+    null
+  ],
+  "http://localhost:8000/image/gallery/pic1.jpg": [
+    {
+      "nick": "Sasha",
+      "comm": "Nice",
+      "date": "05.11.2017 19:10",
+      "like": 1
+    },
+    {
+      "nick": "Sasha",
+      "comm": "Nice",
+      "date": "05.11.2017 19:23"
+    },
+    {
+      "nick": "Sasha",
+      "comm": "Good",
+      "date": "05.11.2017 19:27"
+    },
+    {
+      "nick": "Sasha",
+      "comm": "Good",
+      "date": "05.11.2017 19:28"
+    },
+    {
+      "nick": "s",
+      "comm": "s",
+      "date": "05.11.2017 19:30"
+    },
+    {
+      "nick": "q",
+      "comm": "q",
+      "date": "05.11.2017 19:31"
+    },
+    {
+      "nick": "Dany",
+      "comm": "hi",
+      "date": "05.11.2017 19:31"
+    },
+    {
+      "nick": "Ann",
+      "comm": "pretty",
+      "date": "05.11.2017 19:32",
+      "like": 1
+    },
+    {
+      "nick": "tyr",
+      "comm": "sdgjs",
+      "date": "05.11.2017 19:37",
+      "like": 1
+    },
+    {
+      "nick": "asfa",
+      "comm": "sfasg",
+      "date": "05.11.2017 19:38",
+      "like": -1
+    },
+    {
+      "nick": "a",
+      "comm": "aa",
+      "date": "19.04.2018 12:36",
+      "like": 0
+    },
+    {
+      "nick": "yes",
+      "comm": "Got it",
+      "date": "19.04.2018 12:37",
+      "like": 0
+    },
+    {
+      "nick": "Leyla",
+      "comm": "Looks good!",
+      "date": "19.04.2018 12:37",
+      "like": 1
+    },
+    {
+      "nick": "v",
+      "comm": "vv",
+      "date": "19.04.2018 12:44",
+      "like": 1
+    },
+    {
+      "nick": "a",
+      "comm": "ss",
+      "date": "19.04.2018 12:53",
+      "like": 1
+    }
+  ],
+  "http://localhost:8000/image/gallery/pic5.jpg": [
+    {
+      "nick": "ыоврпоывп",
+      "comm": "ывлопрывп",
+      "date": "18.12.2017 23:57",
+      "like": 0
+    },
+    {
+      "nick": "ывопрылвоп",
+      "comm": "флоыврлыовп",
+      "date": "18.12.2017 23:58",
+      "like": 1
+    },
+    {
+      "nick": "Lol",
+      "comm": "Hi",
+      "date": "07.031.2018 23:05",
+      "like": 0
+    }
+  ]
+}

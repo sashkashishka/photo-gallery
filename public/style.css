@@ -1,0 +1,512 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* 
+=====================================
+=====================================
+body
+=====================================
+===================================== 
+*/
+
+
+body {
+  background-color: #f0f3f6;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 25px 25px 28px 25px;
+  position: relative;
+}
+
+p, span {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* 
+=====================================
+=====================================
+heading
+=====================================
+===================================== 
+*/
+
+
+
+h1 {
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(132, 153, 167);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left; 
+}
+
+.blue-text {
+  color: #21b8c6;
+}
+
+
+/* 
+=====================================
+=====================================
+image gallery container
+=====================================
+===================================== 
+*/
+
+
+.image-gallery {
+  margin: 10px 0 35px 0;
+  position: relative;
+  height: 620px;
+  
+}
+
+.image-gallery > div {
+  border-radius: 3px;
+  box-shadow: 0px 2px 10px rgba(194, 205, 216, 0.5); 
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+.hover-info {
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+
+.hover-info__comment {
+  display: block;
+  float: left;
+  padding: 15px;
+  position: relative;
+}
+
+.hover-info__dislike,
+.hover-info__like {
+  display: block;
+  float: right;
+  position: relative;
+}
+
+.hover-info__dislike {
+  padding: 15px 15px 15px 13px;
+}
+
+.hover-info__like {
+  padding: 15px 13px 15px 15px;
+}
+
+/* when image hover - show the hover-block */
+.image:hover .hover-info {
+  display: block;
+}
+
+.statistics {
+  display: block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 2px solid #a1b1bb;
+  background: #fff;
+  box-sizing: border-box;
+  position: absolute;
+  top: 11px;
+  right: 6px;
+  color: #2d909a;
+  font-size: 11px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.popup-stat {
+  right: 10px;
+  top: 13px;
+}
+
+
+.add-picture {
+  background-color: #fff;
+  
+}
+
+.add-picture div {
+  margin: 75px auto 0 auto;
+  display: block;
+  background-color: #21b8c6;
+  border-radius: 50%;
+  box-shadow: 0px 2px 3px 0px rgba(160, 176, 186, 0.6);
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+}
+
+.add-picture div:hover {
+  background-color: #1eacb9;
+  box-shadow: 0px 3px 4px 0px rgba(160, 176, 186, 0.8);
+}
+
+
+.add-picture p {
+  display: block;
+  margin: 10px auto 0 auto;
+  text-align: center;
+  width: 72px;
+  line-height: 1.2;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: rgb(160, 176, 186);
+}
+
+
+
+
+
+
+
+/* 
+=====================================
+=====================================
+scroll
+=====================================
+===================================== 
+*/
+
+
+.scroll {
+  overflow-x: scroll;
+  position: relative;
+  
+}
+
+#scroll-style::-webkit-scrollbar {
+  height: 10px;
+}
+
+#scroll-style::-webkit-scrollbar-track {
+  background-color: rgb(209, 218, 227);
+  border-radius: 10px;
+  
+}
+
+#scroll-style::-webkit-scrollbar-thumb {
+  background-color: rgb(33, 184, 198);
+  border-radius: 10px;
+}
+
+.comments-container::-webkit-scrollbar {
+  width: 5px;
+  padding-left: 5px;
+}
+
+.comments-container::-webkit-scrollbar-track {
+  background-color: rgb(209, 218, 227);
+  border-radius: 25px;
+}
+
+.comments-container::-webkit-scrollbar-thumb {
+  background-color: rgb(33, 184, 198);
+  border-radius: 25px;
+}
+
+
+/* 
+=====================================
+=====================================
+popup
+=====================================
+===================================== 
+*/
+
+
+.popup {
+  display: none;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 810px;
+  height: 595px; 
+  background-color: #fff;
+  padding-bottom: 20px;
+  box-shadow: 0px 2px 10px rgba(194, 205, 216, 0.5); 
+  z-index: 10000;
+}
+
+.comments {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 360px;
+  padding: 35px 13px 20px 25px;
+  box-sizing: border-box;
+  z-index: 110;
+}
+
+.close-btn {
+  padding: 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.comments h2 {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  color: rgb(132, 153, 167);
+  height: 1em;
+  
+}
+
+.comments-container {
+  display: block;
+  width: 313px;
+  height: 430px;
+  overflow-y: auto;
+  padding-top: 18px;
+}
+
+.send-comment::before {
+  position: absolute;
+  left: -10px;
+  border-bottom: 2px solid #f0f3f6;
+  content: "";
+  display: block;
+  width: 305px;
+    
+}
+
+.comments-window {
+  width: 290px;
+}
+
+.comments-window tr {
+  width: 100%;
+}
+
+.inner-comment-above div {
+  width: 100%;
+  font-size: 11px;
+  font-family: "Open Sans";
+  color: rgb(149, 167, 179);
+  padding: 10px 0 5px 0;
+}
+
+.inner-comment-above td:nth-child(2) {
+  text-align: right; 
+}
+
+.inner-comment div {
+  border-radius: 3px;
+  border: 2px solid #f0f3f6;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  column-span: all;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(96, 117, 131);
+}
+
+
+.send-comment {
+  padding: 0 20px 0 5px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 20px;
+}
+
+
+.comments input,
+.comments button  {
+  display: block;
+  padding: 0;
+  outline: none;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+}
+
+.comments input:nth-child(1) {
+  width: 290px;
+  border-bottom: 2px solid #21b8c6;
+    
+}
+
+.comments input:nth-child(2) {
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 240px;
+  height: 50px;
+  border: 2px solid #f0f3f6;
+  border-right: none; 
+  border-radius: 2px;
+}
+
+.comments button {
+  width: 50px;
+  height: 50px;
+  background-color: #21b8c6;
+  text-align: center;
+  border-radius: 2px;
+}
+
+/* =============================picblock======================== */
+
+.pic-box {
+  width: 450px;
+  position: relative;
+  overflow: hidden;
+  z-index: 110;
+  height: 595px;
+  line-height: 595px;
+}
+
+#popup-pic {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.square-ico {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 7px;
+  text-align: center;
+  padding-top: 18px;
+  width: 65px;
+  height: 60px;
+  background-color: #e0e5e9;
+}
+
+.like {
+  right: 6px;
+}
+
+.dislike {
+  right: 77px;
+}
+
+.like_active {
+  background-color: #28d0ce;
+  bottom: 14px;
+}
+
+.dislike_active {
+  background-color: #d02828;
+  bottom: 0;
+}
+
+.square-ico img {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+}
+
+.square-ico span {
+  line-height: 1em;
+}
+
+
+.popup-bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(240, 242, 245, 0.85);
+  z-index: 100;
+}
+
+/* 
+=====================================
+=====================================
+upload picture
+=====================================
+===================================== 
+*/
+
+
+.upload-pic {
+  display: none;
+  position: fixed;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 2px 10px rgba(194, 205, 216, 0.5);
+  width: 350px;
+  height: 150px;
+  z-index: 1000;
+}
+
+.upload-pic input:nth-child(1) {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+
+.show {
+  display: block;
+}
+
+.show-flex {
+  display: flex;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
