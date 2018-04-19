@@ -21,7 +21,7 @@ module.exports = {
 
   watch: NODE_ENV == "development",
 
-  devtool: NODE_ENV == "development" ? "inline-source-map" : null,
+  devtool: NODE_ENV == "development" ? "inline-source-map" : false,
 
   module: {
     rules: [{
