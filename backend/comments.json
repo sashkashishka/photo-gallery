@@ -109,5 +109,13 @@
       "date": "07.031.2018 23:05",
       "like": 0
     }
+  ],
+  "http://localhost:8000/image/gallery/pic2.jpg": [
+    {
+      "nick": "Yana",
+      "comm": "Awesome dawn!",
+      "date": "19.04.2018 13:28",
+      "like": 0
+    }
   ]
 }
