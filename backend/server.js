@@ -9,7 +9,7 @@ const dir = path.parse(__dirname).dir;
 
 var staticSiteOptions = {
    portnum: 8000, 
-   maxAge: 1000 * 60 * 15 
+   maxAge: 1000 * 60 * 15 * 1
 };
 
 let filesArr = [];
